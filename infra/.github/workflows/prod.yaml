@@ -13,7 +13,7 @@ jobs:
     uses: ./.github/workflows/terraform.yaml
     with:
       environment: prod
-      aws-region: "us-east-2"
+      aws-region: "us-east-1"
       aws-state-s3-bucket: "marcos-terraform-bucket"
       aws-lock-table: "marcos-pipeline-terraform-lock-table"
       aws-assume-role-arn: "arn:aws:iam::727646514307:oidc-provider/token.actions.githubusercontent.com"
