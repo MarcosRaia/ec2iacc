@@ -1,4 +1,4 @@
-module "aws_security_group" {
+module "aws_security_groups" {
   source = "terraform-aws-modules/security-group/aws//modules/http-80"
 
   name        = var.securityGroupName
