@@ -1,7 +1,8 @@
-pipe_bucket_prefix = "prod-terraform-bucket-posmack"
-pipe_region = "us-east-2"
-region        = "us-east-2"
-ami_id       = "ami-0c55b159cbfafe01c"  # Substitua pelo ID da AMI que deseja usar
-instance_type = "t2.micro"
-instance_name = "my-ec2-instance"
-bucket_prefix = "prod-terraform-bucket-posmack"  # Prefixo para o bucket, se necessário
+instanceName = "minha-instancia-ec2"
+imageId = "ami-037774efca2da0726 "
+instanceType = "t2.micro"
+keyName = "ec2iac"
+vpcId = "vpc-0ecb7433bbd712eea"
+securityGroupName = "ec2security"
+securityGroupDescription = "seguranca"
+aws_region = "us-east-2"
