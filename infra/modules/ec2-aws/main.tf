@@ -21,25 +21,3 @@ resource "aws_instance" "example" {
     Name = var.instance_name
   }
 }
-
-# Definindo variáveis necessárias
-variable "region" {
-  description = "A região AWS onde a instância será criada"
-  type        = string
-}
-
-variable "ami_id" {
-  description = "ID da AMI para a instância EC2"
-  type        = string
-}
-
-variable "instance_type" {
-  description = "Tipo da instância EC2"
-  type        = string
-  default     = "t2.micro"  # Tipo padrão
-}
-
-variable "instance_name" {
-  description = "Nome da instância EC2"
-  type        = string
-}

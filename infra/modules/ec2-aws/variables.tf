@@ -1,12 +1,7 @@
 variable "region" {
   description = "The AWS region to deploy resources"
   type        = string
-  default     = "us-east-2"  # Região padrão
-}
-
-variable "bucket_prefix" {
-  description = "The Prefix to name the bucket"
-  type        = string
+  default     = "us-east-1"
 }
 
 variable "ami_id" {
@@ -17,10 +12,15 @@ variable "ami_id" {
 variable "instance_type" {
   description = "Tipo da instância EC2"
   type        = string
-  default     = "t2.micro"  # Tipo padrão
+  default     = "t2.micro"
 }
 
 variable "instance_name" {
   description = "Nome da instância EC2"
+  type        = string
+}
+
+variable "bucket_prefix" {
+  description = "The Prefix to name the bucket"
   type        = string
 }
