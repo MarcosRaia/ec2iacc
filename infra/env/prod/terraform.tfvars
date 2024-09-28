@@ -1,5 +1,5 @@
 instanceName = "minha-instancia-ec2"
-imageId = "ami-037774efca2da0726 "
+imageId = "ami-037774efca2da0726"
 instanceType = "t2.micro"
 keyName = "ec2iac"
 vpcId = "vpc-0ecb7433bbd712eea"
